@@ -1,2 +1,4 @@
 # scss fashion
- Scss project, work with git and my classmate  to learn how is the team work.
+ Scss project
+ 
+ - Work with another person to learn teamwork
