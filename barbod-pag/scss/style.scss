@@ -1,0 +1,95 @@
+@import "_header", "_collections", "_video-collections", "_top-seller",
+  "_bg-image", "_blog", "_email", "_instagram-shop", "_footer";
+// add font
+@font-face {
+  font-family: roboto;
+  src: url("../font/Roboto-Medium.ttf") format(ttf),
+    url("../font/Roboto-Medium.eot") format(eot),
+    url("../font/Roboto-Medium.woff") format(woff),
+    url("../font/Roboto-Medium.woff2") format(woff2);
+}
+// u know what is this :)
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: roboto;
+}
+// ok let's go to media query
+@media screen and (max-width: 1150px) {
+  nav,
+  .video,
+  #seller-product,
+  #blog-section,
+  #bg-image,
+  #email-section,
+  #instagram-shop,
+  #company {
+    padding: 0 30px !important;
+  }
+  #seller-product > section {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #bg-image{
+    height: 100vh !important;
+  }
+  #top-seller::before,#top-seller::after{
+   display: none !important;
+  }
+  .video {
+    > div {
+      width: 100% !important;
+      margin: 20px 0 !important;
+    }
+  }
+  #email-section{
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+  nav {
+    #hamburger-menu{
+      display: inline-block !important;
+      font-size: 25px !important;
+    }
+    #basket-icon,>ul,>div:not(#menu){
+      display: none !important;
+    }
+  }
+  #slider{
+    #chev-right,#chev-left{
+      display: none !important;
+    }
+    .banner-slider{
+      width: 95% !important;
+    }
+  }
+}
+@media screen and (max-width:550px) {
+  .image{
+    display: none !important;
+  }
+  .text-box{
+    width: 50% !important;
+  }
+}
+@media screen and (max-width:400px) {
+  #inp{
+    width: 100px !important;
+  }
+ #slider{
+  display: none !important;
+ }
+ footer >div{
+  align-items: center !important;
+ }
+  body{
+    font-size: 12px;
+  }
+}

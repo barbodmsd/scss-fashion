@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- here i started the nav  -->
+      <nav>
+        <h1>
+          <a href="#"
+            ><img
+              src="./assets/logo.png"
+              style="object-fit: cover; width: 40px; height: 50px"
+              alt="img.logo"
+          /></a>
+        </h1>
+        <i class='bx bx-menu' id="hamburger-menu"></i>
+        
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">ELEMENTS</a></li>
+          <li><a href="../sina-pag/index.html">PAGES 1</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div>
+          <div id="inp">
+            <input type="text" placeholder="Search For Products..." /><i
+              id="search-icon"
+              class="bx bx-search"
+            ></i>
+          </div>
+          <i class="bx bx-basket" id="basket-icon"><span>0</span></i>
+        </div>
+      </nav>
+      <!-- write slider -->
+      <section id="slider">
+        <i class="bx bx-chevron-left" id="chev-left"></i>
+        <div class="banner-slider active-banner">
+          <div class="text-box show-text-box">
+            <p>NEW ARRIVALS</p>
+            <h1>TOP TRENDS 2024</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+              deleniti numquam aliquid commodi vel nobis accusamus molestiae
+              tempore unde. Qui.
+            </p>
+            <a href="#">SHOP NOW<i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <div class="image"><img src="assets/banner-3.png" alt="" /></div>
+        </div>
+        <div class="banner-slider">
+          <div class="text-box">
+            <p>BEST CLOTHES</p>
+            <h1>BEST CLOTHES IN THE WORLD</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">SHOP NOW<i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <div class="image"><img src="assets/banner-1.png" alt="" /></div>
+        </div>
+        <div class="banner-slider">
+          <div class="text-box">
+            <p>BEST COATS</p>
+            <h1>BEST MODE IN THE NEW YORK</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+              deleniti numquam aliquid commodi vel nobis accusamus molestiae
+              tempore unde. Qui.
+            </p>
+            <a href="#">SHOP NOW<i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <div class="image"><img src="assets/banner-2.png" alt="" /></div>
+        </div>
+        <i class="bx bx-chevron-right" id="chev-right"></i>
+        <div id="radio-icon">
+          <i class="circle bx bx-radio-circle bx-radio-circle-marked"></i>
+          <i class="circle bx bx-radio-circle"></i>
+          <i class="circle bx bx-radio-circle"></i>
+        </div>
+      </section>
+      <div id="menu">
+       <div>
+        <i class='bx bx-x' id="close"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">ELEMENTS</a></li>
+          <li><a href="../sina-pag/index.html">PAGES 1</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+       </div>
+      </div>
+    </header>
+    <main>
+      <!-- start collections  -->
+    <section id="collection">
+      <div class="collections">
+        <div class="collection-text">
+          <p>Man <br />Collection</p>
+          <a href="#">SHOP NOW</a>
+        </div>
+        <div class="collection-image">
+          <img src="assets/man-collection.png" alt="" />
+        </div>
+      </div>
+      <div class="collections">
+        <div class="collection-text">
+          <p>Child <br />Collection</p>
+          <a href="#">SHOP NOW</a>
+        </div>
+        <div class="collection-image">
+          <img src="assets/child-collection.png" alt="" />
+        </div>
+      </div>
+      <div class="collections">
+        <div class="collection-image">
+          <img src="assets/woman-collection.png" alt="" />
+        </div>
+        <div class="collection-text">
+          <p>Woman <br />Collection</p>
+          <a href="#">SHOP NOW</a>
+        </div>
+      </div>
+    </section>
+    <!-- video and slider collections -->
+    <!-- man collection -->
+    <section class="video">
+      <div class="video-collection">
+        <video id="man-video" loop>
+          <source src="assets/video/man-video.mp4" />
+        </video>
+        <i class="bx bx-play-circle" id="man-play"></i>
+        <i class="bx bx-pause-circle" id="man-pause"></i>
+      </div>
+      <div class="slider-collection">
+        <div>
+          <h2>MAN'S COLLECTION</h2>
+          <p>HE BOYS FAVORITE PRODUCTS</p>
+        </div>
+        <div class="slider-product" id="man-slider">
+          <div class="product-item">
+            <img src="assets/collection/man-shoes.jpg" alt="" />
+            <div>
+              <h5>Man shoes and sandal</h5>
+              <div>
+                <a href="#">$500.00</a>
+                <p>$370.00</p>
+              </div>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/man-shirt.jpg" alt="" />
+            <div>
+              <h5>Michacle Man Shirt</h5>
+              <p>$100.000</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/man-watch.jpg" alt="" />
+            <div>
+              <h5>Man Hand watch</h5>
+              <div>
+                <a href="#">$200.00</a>
+                <p>$150.00</p>
+              </div>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/man-jeans.jpg" alt="" />
+            <div>
+              <h5>Man's Jeans pant</h5>
+              <p>$180</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/man-hat.jpg" alt="" />
+            <div>
+              <h5>Man's great and awesome Hat</h5>
+              <p>$80.00</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/mant-shirt.jpg" alt="" />
+            <div>
+              <h5>Man T-Shirt any colors</h5>
+              <p>$255.80</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+        <i class="bx bx-chevrons-right" id="chev-slider-right"></i>
+      </div>
+    </section>
+    <!-- woman collection -->
+    <section class="video">
+      <div class="slider-collection">
+        <div>
+          <h2>WOMAN'S COLLECTION</h2>
+          <p>SHE BOYS FAVORITE PRODUCTS</p>
+        </div>
+        <div class="slider-product" id="woman-slider">
+          <div class="product-item">
+            <img src="assets/collection/woman-shirt.jpg" alt="" />
+            <div>
+              <h5>Girl's Modern Shirt</h5>
+              <p>$100.000</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/woman-watch.jpg" alt="" />
+            <div>
+              <h5>Woman Hand watch</h5>
+              <div>
+                <a href="#">$200.00</a>
+                <p>$150.00</p>
+              </div>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/woman-jeans.jpg" alt="" />
+            <div>
+              <h5>Woman's Jeans pant</h5>
+              <p>$180</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/woman-hat.jpg" alt="" />
+            <div>
+              <h5>Woman's great and awesome Hat</h5>
+              <p>$80.00</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/woman-shoes.jpg" alt="" />
+            <div>
+              <h5>woman shoes and sandal</h5>
+              <div>
+                <a href="#">$500.00</a>
+                <p>$370.00</p>
+              </div>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="assets/collection/womant-shirt.jpg" alt="" />
+            <div>
+              <h5>Woman T-Shirt Oops :)</h5>
+              <p>$255.80</p>
+              <div class="star">
+                <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="hover-icons">
+              <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+              ><i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+        <i class="bx bx-chevrons-left" id="chev-slider-left"></i>
+      </div>
+      <div class="video-collection">
+        <video id="woman-video" loop>
+          <source src="assets/video/woman-video.mp4" />
+        </video>
+        <i class="bx bx-play-circle" id="woman-play"></i>
+        <i class="bx bx-pause-circle" id="woman-pause"></i>
+      </div>
+    </section>
+    <!-- top seller -->
+    <section id="seller-product">
+      <div id="top-seller"><h2>Top Seller</h2></div>
+      <section>
+        <div>
+          <img src="assets/top-seller/backpack.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>BackPack for school</h5>
+          <p>$155.56</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/suit.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>OH it's a beautiful Suit</h5>
+          <p>$1000.00</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/suit shoe.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>Shoes for suit</h5>
+          <p>$570.0</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/watch.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>Awsome watch for Gentleman</h5>
+          <p>$600.00</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/shoes.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>Shoes for Gym and walk</h5>
+          <p>$160.02</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/jeans.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>Good jeans for beautiful woman</h5>
+          <p>$355.00</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/shirt.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>Blue shirt for woman</h5>
+          <p>$455.00</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+        <div>
+          <img src="assets/top-seller/smart-watch.jpg" alt="image" />
+          <div class="star-item">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+            ><i class="bx bxs-star"></i>
+          </div>
+          <h5>Black Smart Watch</h5>
+          <p>$255.00</p>
+          <div class="hover-icons">
+            <i class="bx bx-heart"></i><i class="bx bx-basket"></i
+            ><i class="bx bx-search"></i>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- section who has bg img  -->
+    <section id="bg-image">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quaerat,
+          tempore?
+        </p>
+        <a href="#">Shopping & Returns</a>
+      </div>
+    </section>
+    <!-- blog section -->
+    <section id="blog-section">
+      <h2>From Our Blog </h2>
+      <section id="blog-product">
+        <!-- card  -->
+        <div>
+          <img src="assets/blog/watch.jpg" alt="">
+          <div class="date">
+            <a href="#">Agu,02,2024</a>
+            <p>02 Comments</p>
+          </div>
+          <div class="lorem">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem molestias et, placeat </p>
+            <a href="#">READ MORE ></a>
+          </div>
+        </div>
+        <!-- card -->
+        <div>
+          <img src="assets/blog/woman.jpg" alt="">
+          <div class="date">
+            <a href="#">Agu,02,2024</a>
+            <p>02 Comments</p>
+          </div>
+          <div class="lorem">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem molestias et, placeat </p>
+            <a href="#">READ MORE ></a>
+          </div>
+        </div>
+        <!-- card -->
+        <div>
+          <img src="assets/blog/sandals.jpg" alt="">
+          <div class="date">
+            <a href="#">Agu,02,2024</a>
+            <p>02 Comments</p>
+          </div>
+          <div class="lorem">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rem molestias et, placeat </p>
+            <a href="#">READ MORE ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- email input  -->
+    <section id="email-section">
+      <div id="letter"><i class='bx bx-envelope' id="letter"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quibusdam, dignissimos!</p></div>
+      <div id="input"><input type="email" placeholder="Email Address..." ><i class='bx bx-right-arrow-alt'></i></div>
+    </section>
+    <!-- instagram shop -->
+    <section id="instagram-shop">
+      <div id="logo">
+        <img src="assets/logo/instagram-logo.jpg" alt="" width="40px " height="40px">
+        <h2>Instagram Shop</h2>
+      </div>
+      <section id="gallery">
+        <!-- card -->
+        <div>
+          <img src="assets/gallery/1.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/2.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/3.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/4.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/6.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/5.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/7.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/8.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/9.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+         <!-- card -->
+        <div>
+          <img src="assets/gallery/10.jpg" alt="">
+          <div class="shop">
+            <i class='bx bxl-instagram' ></i>
+            <p>SHOP IT</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    </main>
+    <footer>
+      <section id="company">
+        <div id="logo-footer">
+          <img src="assets/logo.png" width="50px" height="50px" alt="">
+         <p>MINIMAL SHOP</p>
+        </div>
+        <div>
+          <p>Our Company</p>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Studio</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Story Location</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Customer Support</p>
+          <ul>
+            <li><a href="#">The Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Faqs</a></li>
+            <li><a href="#">Order trekking</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+          </ul>
+        </div>
+        <div id="newsletter">
+          <p>Newsletter</p>
+          <div id="inp"><input type="text" placeholder="Enter Your Email and subscribed..."><i class='bx bx-right-arrow-alt'></i></div>
+          <div id="social-media"><i title="facebook" class='bx bxl-facebook-circle' ></i> <i title="Instagram" class='bx bxl-instagram' ></i><i title="Linkedin" class='bx bxl-linkedin'></i><i title="Github" class='bx bxl-github'></i></div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

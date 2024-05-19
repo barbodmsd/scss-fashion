@@ -1,0 +1,110 @@
+// style to top seller
+#seller-product {
+  padding: $paddingEl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+//   style to the title
+  #top-seller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    h2{
+      position: relative;
+      color: $color;
+      padding-bottom: 8px;
+      &:before{
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 50px;
+          height: 2px;
+          background-color: $color;
+      }
+    }
+    &::before {
+      content: '';
+      background-color: grey;
+      width: 375px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 100%;
+    }
+    &::after {
+      content: '';
+      background-color: grey;
+      width: 375px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+    }
+  }
+//   style to  the item in the section product
+>section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    >div{
+        width: 190px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-direction: column;
+        margin-top: 10px;
+        cursor: pointer;
+        position: relative;
+        img{
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            transition: all 0.5s;
+        }
+        p{
+            opacity: 0.6;
+        }
+        .star-item{
+            color: rgb(209, 122, 23);
+        }
+        // style for hover icons
+        .hover-icons{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 90%;
+            opacity: 0;
+            transition: all 1s;
+            display: flex !important;
+            gap: 5px;
+            i{
+              background-color: white;
+              padding: 5px;
+              border-radius: 50%;
+              box-shadow: 1px 1px 5px 1px rgb(130, 115, 115);
+            }
+          }
+          &:hover .hover-icons{
+            bottom: 45%;
+            opacity: 1;
+          }
+          &:hover img{
+            filter: brightness(55%);
+          }
+    }
+}
+}

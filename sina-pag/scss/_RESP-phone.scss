@@ -1,0 +1,30 @@
+@import "_display-flax";
+
+@media screen and (max-width: 455px) {
+    .search-box {
+        display: none;
+    }
+    .text-slider {
+        h3 {
+            font-size: 110px !important;
+        }
+    }
+    .video-players {
+        display: none;
+    }
+    .showcase{
+        flex-direction: column !important;
+    
+        .bx-chevron-right {
+            display: none !important;
+        }
+    
+    }
+
+    .cards,.cards2 {
+        flex-direction: column;
+        .card-mn {
+            width: 193px !important;
+        }
+    }
+}

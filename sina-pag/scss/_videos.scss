@@ -1,0 +1,28 @@
+@import "_display-flax","_colers";
+
+.video-players {
+    @include flex (flex,center,center,0px);
+    position: relative;
+    video {
+        width: 1000px;
+        filter:brightness(30%);
+    }
+    i {
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 100;
+        color: $color-white;
+    }
+}
+
+.paly {
+    filter:brightness(100%) !important;
+}
+
+.hiden-play-icon {
+    opacity: 0;
+    visibility: hidden;
+}

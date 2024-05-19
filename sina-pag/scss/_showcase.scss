@@ -1,0 +1,50 @@
+@import "_display-flax";
+
+.showcase {
+    @include flex(flex,center,center,0px);
+    .bg-img-showcase {
+        img {
+            width: 463px;
+            height: 465px;
+            object-fit: cover;
+        }
+    }
+    
+    .sliders-showcase {
+        @include flex(flex,center,center,0px);
+        width: 465px;
+        overflow: hidden;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        .item {
+            text-align: center;
+            line-height: 1.5;
+            h4 {
+                font-size: 24px;
+                color: rgb(146, 146, 146);
+                font-weight: 400;
+            }
+            span {
+                font-size: 14px;
+            }
+            img {
+                width: 463px;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
+    .sliders-showcase::-webkit-scrollbar {
+        display: none;
+    }
+    .card-shop-button-next {
+        border: none;
+        .bx-chevron-right {
+            font-size: 50px;
+            position: absolute;
+            left: 75%;
+        }
+    }
+
+
+}

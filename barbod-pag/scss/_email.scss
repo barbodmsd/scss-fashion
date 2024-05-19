@@ -1,0 +1,48 @@
+// email section
+#email-section{
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $paddingEl;
+    padding-block: 50px;
+    background-color: rgb(212, 212, 212);
+    margin: 50px 0;
+    // email icon 
+    #letter{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i{
+            font-size: 3.5em;
+        }
+        p{
+            opacity: 0.8;
+        }
+    }
+    // input email
+    #input{
+        width: 300px;
+        position: relative;
+        cursor: pointer;
+        // style to input
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            background-color: transparent;
+            padding: 7px 0;
+        }
+        // arrow icon
+        i{
+            position: absolute;
+            font-size: 20px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.5s;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "_display-flax";
+
+@media screen and (max-width: 836px) {
+    header{
+        justify-content: space-around !important;
+    }
+    .bx-menu-alt-left {
+        display: inline !important;
+        font-size: 30px;
+    }
+  .nav-bar {
+    display: none;
+  }
+  .bx-chevron-right {
+    left: 58% !important;
+  }
+  .video-players {
+    width: 700px;
+  }
+  
+  .card-mn {
+    width: 261px !important;
+  }
+}

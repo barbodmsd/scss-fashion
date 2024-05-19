@@ -1,0 +1,103 @@
+@import "_display-flax";
+
+#mein-pag {
+    header {
+        height: 100px;
+        position: relative;
+        .bx-menu-alt-left {
+            display: none;
+        }
+        .menu-left {
+            .bx-x {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 35px;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            background-color: $color-white;
+            z-index: 1000;
+            position: absolute;
+            bottom: -300px;
+            padding: 50px;
+            height: 300px;
+            left: -300px;
+            transition: all 1s;
+        }
+        .show-menu-left {
+            left: 0px !important;
+        }
+        .logo {
+            img {
+                width: 40px;
+                
+            }
+        }
+        @include flex(flex,center,space-evenly,0);
+        
+        .nav-bar {
+            nav {
+                @include flex(flex,center,center,30px);
+                
+                li a {
+                    padding-bottom: 4px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        background: $color-black;
+                        margin-top: 5px;
+                        bottom: 0;
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        transition: all 0.5s;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .seaeche-shop-header {
+            @include flex(flex,center,center,20px);
+            .search-box {
+                position: relative;
+                #searche {
+                    width: 200px;
+                    padding: 6px 10px;
+                    border-radius: 20px;
+                    border: 1px solid $color-black;
+                    outline: none;
+                }
+                .bx-search {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+            .icon-shop {
+                position: relative;
+                .bx-shopping-bag {
+                    font-size: 20px;
+                }
+                .show-num {
+                    position: absolute;
+                    background-color: $color-black;
+                    width: 13px;
+                    height: 13px;
+                    top: 0;
+                    left: 16px;
+                    border-radius: 100px;
+                    color: $color-white;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

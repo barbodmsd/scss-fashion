@@ -1,0 +1,70 @@
+@import "_display-flax";
+
+#footer-pag {
+    @include flex(flex,center,space-evenly,2px);
+    border-top: 1px  solid rgba(0, 0, 0, 0.466);
+    background-color: rgb(236, 236, 236);
+    padding: 70px 0px 70px 0px;
+    margin-top: 90px;
+    .logo-footer {
+        text-align: center;
+        line-height: 1.5;
+        
+        img {
+            width: 40px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p{
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    }
+    .nav1-footer,.nav2-footer {
+        h5 {
+            font-size: 19px;
+            line-height: 2;
+        }
+        li {
+            font-size: 15px;
+            line-height: 1.4;
+            opacity: 0.6;
+            &:hover{opacity: 1;}
+        }
+
+    }
+    .sushiyal-footer {
+        line-height: 4;
+
+        h5 {
+            font-size: 19px;
+        }
+        #newsletter {
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+            padding-bottom: 10px;
+            background-color: rgb(236, 236, 236);
+        }
+        .icon-sh {
+            display: flex;
+            gap: 10px;
+            i {
+                font-size: 25px;
+        
+            }
+        }
+    }
+
+}
+.xline-footer {
+    padding: 25px 30px 25px 30px;
+    @include flex (flex,center,space-between,0px);
+    flex-direction: row;
+    border-top: 1px  solid rgba(0, 0, 0, 0.466);
+    .logo-bank {
+        i{
+            font-size: 35px;
+        }
+    }
+}

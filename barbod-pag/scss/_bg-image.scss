@@ -1,0 +1,41 @@
+// style to all box
+#bg-image {
+    width:100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/bg-image/pexels-josue-velasquez-13571164.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: $paddingEl;
+    // style to text box
+    >div{
+        width: 100%;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        padding: 20px;
+        p{
+            font-size: 1.5em;
+            color: white;
+            text-align: center;
+            // white-space: nowrap;
+        }
+        a{
+            border: 1px solid white;
+            color: white;
+            transition: all 0.5s;
+            padding: 7px 20px;
+            font-weight: 100;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}

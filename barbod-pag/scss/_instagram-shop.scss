@@ -1,0 +1,81 @@
+#instagram-shop{
+    margin: 100px 0;
+    padding: $paddingEl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        // instagram shop
+        h2{
+            position: relative;
+            color: $color;
+            padding-bottom: 8px;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 2px;
+                background-color: $color;
+            }
+        }
+    }
+    // gallery
+    #gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 50px 0;
+        // card
+        >div{
+            width: 170px;
+            height: 170px;
+            position: relative;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.5s;
+            }
+            // hover div
+            .shop{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                position: absolute;
+                opacity: 0;
+                transition: all 0.5s;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                i{
+                    font-size: 30px;
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+                
+            }
+            &:hover img{
+                filter: brightness(35%);
+            }
+            &:hover >div{
+                opacity: 1;
+            }
+        }
+    }
+
+}
